@@ -1,0 +1,74 @@
+
+
+/* Reset default browser styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(146, 131, 179);
+}
+
+.calculator {
+    border: 2px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 300px;
+    background-color: #fff;
+}
+
+#display {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-bottom: 2px solid #333;
+    font-size: 2em;
+    text-align: right;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px; /* Small gap between buttons */
+}
+
+.btn {
+    padding: 20px;
+    font-size: 1.5em;
+    border: none;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #ffffff;
+}
+
+.btn:active {
+    background-color: #3d272700;;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+/* Special styling for '=' button */
+button:last-child {
+    background-color: hsl(326, 5%, 72%);
+    color: white;
+}
+
+button:last-child:hover {
+    background-color: #b46767;;
+}
+#head{
+    color: #d0d0d0;
+    margin-bottom: 600px;
+}
